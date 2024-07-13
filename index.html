@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guiding Light Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="inputContainer">
+        <h1>Guiding Light Generator</h1>
+        <div class="textboxContainer">
+            <input type="text" id="textbox1" placeholder="Enter dialog 1">
+            <input type="text" id="textbox2" placeholder="Enter dialog 2">
+            <input type="text" id="textbox3" placeholder="Enter dialog 3">
+            <input type="text" id="textbox4" placeholder="Enter dialog 4">
+            <input type="text" id="textbox5" placeholder="Enter dialog 5">
+            <input type="text" id="textbox6" placeholder="Enter dialog 6">
+            <input type="text" id="textbox7" placeholder="Enter dialog 7">
+        </div>
+        <div id="fpsContainer">
+            <label class="switch">
+                <input type="checkbox" id="fpsSwitch">
+                <span class="slider"></span>
+            </label>
+            <span>Show FPS</span>
+        </div>
+        <button id="playButton">Play</button>
+    </div>
+
+    <div id="deathscreen">
+        <video id="staticVideo" muted>
+            <source src="DeathScreen.mp4" type="video/mp4">
+        </video>
+        <audio id="deathMusic">
+            <source src="DeathScreenMusic.wav" type="audio/wav">
+        </audio>
+
+        <audio id="EndMusic">
+            <source src="EndMusic.wav" type="audio/wav">
+        </audio>
+        <div id="guidingLight">Guiding Light</div>
+    </div>
+
+    <div id="loadingScreen">
+        <section class="dots-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </section>
+    </div>
+
+    <div id="fpsCounter">FPS: 0</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
